@@ -1,0 +1,3 @@
+python setup.py install
+pip3 install -r requirements.txt
+python create_phonetic_dict.py --src russian.txt --dst 'user_lexicon.txt' --bad 'unknown_words.txt'

@@ -2,22 +2,25 @@ from argparse import ArgumentParser
 import codecs
 import os
 
-import pymorphy2
+# import pymorphy2
 from russian_tagsets import converters
 
 from russian_g2p.Grapheme2Phoneme import Grapheme2Phoneme
 
+import re
 
 class Lexicon(object):
 
-    def __init__(self, phones):
-        """ phones: list of strings, each being a phone """
-        self.phone_set = set(self.make_position_independent(phones))
+    # def __init__(self):
+        # """ phones: list of strings, each being a phone """
+        # self.phone_set = set(self.make_position_independent(phones))
 
     # XSAMPA phones are 1-letter each, so 2-letter below represent 2 separate phones.
     CMU_to_XSAMPA_dict = {
         "'"   : "'",
+        'H'  : '', # W
         'AA'  : 'A',
+        'A'  : 'A',
         'AE'  : '{',
         'AH'  : 'V',  ##
         'AO'  : 'O',  ##
@@ -28,14 +31,17 @@ class Lexicon(object):
         'D'   : 'd',
         'DH'  : 'D',
         'EH'  : 'E',
+        'E'  : 'E',
         'ER'  : '3',
         'EY'  : 'eI',
         'F'   : 'f',
         'G'   : 'g',
         'HH'  : 'h',
         'IH'  : 'I',
+        'I'  : 'I',
         'IY'  : 'i',
         'JH'  : 'dZ',
+        'J'  : 'dZ',
         'K'   : 'k',
         'L'   : 'l',
         'M'   : 'm',
@@ -43,6 +49,7 @@ class Lexicon(object):
         'N'   : 'n',
         'OW'  : 'oU',
         'OY'  : 'OI', ##
+        'O'  : 'OI', ##
         'P'   : 'p',
         'R'   : 'r',
         'SH'  : 'S',
@@ -50,6 +57,7 @@ class Lexicon(object):
         'TH'  : 'T',
         'T'   : 't',
         'UH'  : 'U',
+        'U'  : 'U',
         'UW'  : 'u',
         'V'   : 'v',
         'W'   : 'w',
@@ -71,7 +79,12 @@ class Lexicon(object):
                 stress = True
             elif phone.endswith(('0', '2')):
                 phone = phone[:-1]
+            if phone == "":
+                continue
             phone = cls.CMU_to_XSAMPA_dict[phone]
+            if phone == "":
+                continue
+            print(phone)
             assert 1 <= len(phone) <= 2
 
             new_phone = ("'" if stress else '') + phone
@@ -83,10 +96,13 @@ class Lexicon(object):
                 for match in re.finditer(r"('?).", new_phone):
                     new_phones.append(match.group(0))
 
-        return new_phones
+        converted_phone = ""
+        for phone in new_phones:
+            converted_phone += phone
+        return converted_phone
 
     def phones_cmu_to_xsampa(self, phones):
-        return self.phones_cmu_to_xsampa_generic(phones, self.phone_set)
+        return self.phones_cmu_to_xsampa_generic(phones, None)
 
     @classmethod
     def make_position_dependent(cls, phones):
@@ -219,15 +235,15 @@ def main():
 
             # write un-accented word
             word = cur[0]
-            word = word.replace("\u0301", "+")
-            # word = word.replace("о́", "o+")
-            fp.write('{0} '.format(word))
-            for index, sound in enumerate(cur):
-                # skip word
-                if index == 0:
-                    continue 
-                fp.write('{0} '.format(sound))
-            fp.write("\n")
+            unaccented_word = word.replace("\u0301", "+")
+            if word != unaccented_word: 
+                fp.write('{0} '.format(unaccented_word))
+                for index, sound in enumerate(cur):
+                    # skip word
+                    if index == 0:
+                        continue 
+                    fp.write('{0} '.format(sound))
+                fp.write("\n")
 
 
     if len(bad_words) > 0:

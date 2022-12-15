@@ -1,23 +1,92 @@
-продо́лжить
-нулево́й
-пе́рвый 
-второ́й
-тре́тий 
-четвёртый
-пя́тый 
-шесто́й
-седьмо́й
-восьмо́й
-девя́тый
-ноль 
-нуль 
-оди́н 
-два 
-три 
-четы́ре
-пять 
-шесть 
-семь 
-во́семь
-де́вять
-де́сять
+во́семь v OI s I m 
+во+семь v OI s I m 
+во́семьдесят v OI s I m d I s I t 
+во+семьдесят v OI s I m d I s I t 
+восемна́дцать v A s I m n A ts A t 
+восемна+дцать v A s I m n A ts A t 
+восьмо́й v A s m OI dZ 
+восьмо+й v A s m OI dZ 
+второ́й f t A r OI dZ 
+второ+й f t A r OI dZ 
+два d v A 
+два́дцать d v A ts A t 
+два+дцать d v A ts A t 
+двена́дцать d v I n A ts A t 
+двена+дцать d v I n A ts A t 
+де́вять d E v I t 
+де+вять d E v I t 
+де́сять d E s I t 
+де+сять d E s I t 
+девя́тый d I v A t j dZ 
+девя+тый d I v A t j dZ 
+девяно́сто d I v I n OI s t A 
+девяно+сто d I v I n OI s t A 
+девятна́дцать d I v I t n A ts A t 
+девятна+дцать d I v I t n A ts A t 
+игра́ I g r A 
+игра+ I g r A 
+ка́рта k A r t A 
+ка+рта k A r t A 
+ка́рту k A r t U 
+ка+рту k A r t U 
+настро́йки n A s t r OI dZ k I 
+настро+йки n A s t r OI dZ k I 
+но́вая n OI v A dZ A 
+но+вая n OI v A dZ A 
+ноль n A l 
+нулево́й n U l I v OI dZ 
+нулево+й n U l I v OI dZ 
+нуль n U l 
+оди́н A d I n 
+оди+н A d I n 
+оди́ннадцать A d I n A ts A t 
+оди+ннадцать A d I n A ts A t 
+ору́жие A r U z j dZ I 
+ору+жие A r U z j dZ I 
+пе́рвый p E r v j dZ 
+пе+рвый p E r v j dZ 
+показа́ть p A k A z A t 
+показа+ть p A k A z A t 
+продо́лжить p r A d OI l z j t 
+продо+лжить p r A d OI l z j t 
+пя́тый p A t j dZ 
+пя+тый p A t j dZ 
+пятна́дцать p I t n A ts A t 
+пятна+дцать p I t n A ts A t 
+пять p I t 
+пятьдеся́т p I d I s A t 
+пятьдеся+т p I d I s A t 
+се́мьдесят s E m d I s I t 
+се+мьдесят s E m d I s I t 
+седьмо́й s I d m OI dZ 
+седьмо+й s I d m OI dZ 
+семна́дцать s I m n A ts A t 
+семна+дцать s I m n A ts A t 
+семь s I m 
+со́рок s OI r A k 
+со+рок s OI r A k 
+сохрани́ть s A k r A n I t 
+сохрани+ть s A k r A n I t 
+сто s t A 
+счёт s OI t 
+тре́тий t r E t I dZ 
+тре+тий t r E t I dZ 
+три t r I 
+три́дцать t r I ts A t 
+три+дцать t r I ts A t 
+трина́дцать t r I n A ts A t 
+трина+дцать t r I n A ts A t 
+ты́сяча t j s I ts A 
+ты+сяча t j s I ts A 
+четвёртый ts I t v OI r t j dZ 
+четы́ре ts I t j r I 
+четы+ре ts I t j r I 
+четы́рнадцать ts I t j r n A ts A t 
+четы+рнадцать ts I t j r n A ts A t 
+шестна́дцать s j s n A ts A t 
+шестна+дцать s j s n A ts A t 
+шесто́й s j s t OI dZ 
+шесто+й s j s t OI dZ 
+шесть s j s t 
+шестьдеся́т s j z d j s A t 
+шестьдеся+т s j z d j s A t 
